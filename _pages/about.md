@@ -11,3 +11,7 @@ excerpt:   This page contains the curriculum vitae (CV) of the author.
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 If you like these blogs and like to show your appreciation then please leave a star in the GitHub repository. Thank you!
+
+<p class="github-button-container">
+<a class="github-button" href="https://github.com/yexin-mao/yexin-mao.github.io" data-size="large" data-show-count="true" aria-label="Star yexin-mao/yexin-mao.github.io on GitHub">Yexin Mao</a>
+</p>
