@@ -1,7 +1,7 @@
 ---
 layout:    about
 permalink: "/about"
-author:    Yexin Mao
+author:    yxmao
 keywords:  about person demo example
 title:     About Yexin Mao
 menutitle: About
