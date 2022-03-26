@@ -1,9 +1,9 @@
 ---
 layout:    about
 permalink: "/about"
-author:    jdecent
+author:    yxmao
 keywords:  about person demo example
-title:     About Jekyll Decent
+title:     About these pages
 menutitle: About
 weight:    90
 excerpt:   This page contains the curriculum vitae (CV) of the author.
