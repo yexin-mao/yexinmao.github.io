@@ -23,7 +23,7 @@ default:                                                      # Fallback if noth
   twitch:                                                     # OPTIONAL: used in the about page
   s500px:                                                     # OPTIONAL: used in the about page
   reddit:                                                     # OPTIONAL: used in the about page
-jdcent:
+yexinmao:
   initial:      yxmao
   name:         "Yexin Mao"       
   cover:        /assets/mountain-alternative-cover.jpg  
