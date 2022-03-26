@@ -1,64 +1,93 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
-    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {-webkit-text-stroke: 0px #000000}
-    ul.ul1 {list-style-type: disc}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">--- layout: about permalink: "/cv" author: yexinmao keywords: about person demo example title: CV menutitle: CV weight: 70 excerpt: This page contains the curriculum vitae (CV) of the author. --- {% assign cv = site.data.cv[page.author] %}</span></p>
-<p class="p2"><span class="s1">{{cv.profile}}</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Skills</b></span></h2>
-<ul class="ul1">
-  <li class="li1"><span class="s2"></span><span class="s1">{% for skill in cv.skills %}</span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{{ skill }}</span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Education</b></span></h2>
-<p class="p1"><span class="s1">{% for entry in cv.education %}</span></p>
-<p class="p1"><span class="s1">{{entry.time}}</span></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>{{entry.location}}</b></span></h3>
-<p class="p2"><span class="s1">{{entry.description}}</span></p>
-<p class="p1"><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Employment History</b></span></h2>
-<p class="p1"><span class="s1">{% for employment in cv.employment %}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">{{employment.time}}</span></p>
-<p class="p1"><span class="s1">{{employment.time}}</span></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>{{employment.position}}</b></span></h3>
-<p class="p1"><span class="s1">{{employment.company}} ({{employment.location}})</span></p>
-<ul class="ul1">
-  <li class="li1"><span class="s2"></span><span class="s1">{% for responsibility in employment.responsibilities %}</span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{{responsibility}}</span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
-</ul>
-<p class="p1"><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Project History</b></span></h2>
-<p class="p1"><span class="s1">{% for project in cv.projects %}</span></p>
-<p class="p1"><span class="s1">{{project.team}}</span></p>
-<p class="p1"><span class="s1">{{project.time}}</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>{{project.title}}</b></span></h2>
-<ul class="ul1">
-  <li class="li1"><span class="s2"></span><span class="s1">{% for responsibility in project.responsibilities %}</span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{{responsibility}}</span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
-</ul>
-<ul class="ul1">
-  <li class="li1"><span class="s2"></span><span class="s1">{% assign technologies = project.technologies | split: ',' %} {% for technology in technologies %}</span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{{ technology }}</span></li>
-  <li class="li1"><span class="s2"></span><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
-</ul>
-<p class="p1"><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></p>
-</body>
-</html>
+---
+layout:    about
+permalink: "/cv"
+author:    jdecent
+keywords:  about person demo example
+title:     Jekyll Decent CV
+menutitle: CV
+weight:    70
+excerpt:   This page contains the curriculum vitae (CV) of the author.
+---
+{% assign cv = site.data.cv[page.author] %}
+
+<div class="md-card no-border">
+    <p>{{cv.profile}}</p>
+</div>
+
+<div class="md-card shadow">
+    <div class="title icon-stats-bars">
+        <h2>Skills</h2>
+    </div>
+    <div class="content">
+        <ul>
+            {% for skill in cv.skills %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div class="md-card shadow education">
+    <div class="title icon-library">
+        <h2>Education</h2>
+    </div>
+    {% for entry in cv.education %}   
+    <dl>
+        <dt class="time">{{entry.time}}</dt>
+        <dd>
+            <h3>{{entry.location}}</h3>
+            <p>{{entry.description}}</p>
+        </dd>
+    </dl>
+    {% endfor %}
+</div>
+
+<h2 class="employment-heading">Employment History</h2>
+
+<div class="timeline-container">
+    {% for employment in cv.employment %}
+    <div class="timeline-block">
+        <div class="marker"></div>
+        <div class="time">{{employment.time}}</div>
+        <div class="timeline-content">
+            <div class="time">{{employment.time}}</div>
+            <h3>{{employment.position}}</h3>
+            <span>{{employment.company}} ({{employment.location}})</span>
+            <ul>
+                {% for responsibility in employment.responsibilities %}
+                <li>{{responsibility}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<h2 class="project-heading">Project History</h2>
+
+{% for project in cv.projects %}
+<div class="md-card shadow project">
+    <div class="meta">
+        <div class="team">{{project.team}}</div>
+        <div class="time">{{project.time}}</div>
+    </div>
+    <div class="content">
+        <h2>{{project.title}}</h2>
+        <ul>
+            {% for responsibility in project.responsibilities %}
+            <li>{{responsibility}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="footer">
+        <ul>
+            {% assign technologies = project.technologies | split: ',' %}
+            {% for technology in technologies %}
+            <li> {{ technology }}</li>
+            {% endfor %}
+        </ul>
+        <span class="icon-briefcase"></span>
+    </div>
+</div>
+{% endfor %}
