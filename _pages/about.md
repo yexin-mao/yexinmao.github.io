@@ -1,9 +1,9 @@
 ---
 layout:    about
 permalink: "/about"
-author:    yexinmao
+author:    default
 keywords:  about person demo example
-title:     About Yexin Mao
+title:     About Yexin Mao's page
 menutitle: About
 weight:    90
 excerpt:   This page contains the curriculum vitae (CV) of the author.
