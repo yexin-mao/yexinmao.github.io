@@ -23,22 +23,13 @@ default:                                                      # Fallback if noth
   twitch:                                                     # OPTIONAL: used in the about page
   s500px:                                                     # OPTIONAL: used in the about page
   reddit:                                                     # OPTIONAL: used in the about page
-jdecent:
+yexinmao:
   initial:      yxmao
   name:         "Yexin Mao"       
   cover:        /assets/mountain-alternative-cover.jpg  
   picture:      /assets/johndoe.jpg  
   bio:          This is my bio!
   location:     Sydney
-  email:        "-"   
+  email:        "maoyexin@outlook.com"   
   twitter:      "-"    
   twitch:       "-"
-jwillmer:
-  initial:      yxmao
-  name:         "Yexin Mao"        
-  picture:      /assets/jwillmer.jpg  
-  bio:          All about technology 
-  location:     Sydney 
-  website:      "http://jwillmer.de/cv" 
-  twitter:      jenswillmer
-  github:       jwillmer
